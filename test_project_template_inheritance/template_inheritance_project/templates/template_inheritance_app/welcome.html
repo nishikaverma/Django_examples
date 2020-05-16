@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Homepage</title>
+    {% block head%}
+    <h5>{{greet}}</h5>
+    {%endblock%}
+
+</head>
+<body>
+{%block content%}
+<img src="{% static 'images/wwallpic.jpg'%}" >
+
+{%endblock%}    
+</body>
+
+{% block footer%}
+<br>
+Address     :  shop no. 64 ,MP Nagar, Zone II, Bhopal(M.P.) 
+contact us  : xyz
+{%endblock%}
+</html>

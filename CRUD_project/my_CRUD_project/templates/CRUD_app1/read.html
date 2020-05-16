@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <table border="5">
+        <tr> <th>Employee Id</th> <th> Employee name</th> <th>Employee e-mail</th> <th>Employee salary</th> </tr>
+        {% for e in emp_list %}
+        <tr><td>{{e.e_id}}</td><td>{{e.e_name}}</td><td>{{e.e_mail}}</td><td>{{e.E_sal}}</td></tr>
+        {% endfor %}
+
+    </table>
+    <p><a href="http://127.0.0.1:8000/home/"> click here to go back to home page</a></p>
+
+</body>
+</html>

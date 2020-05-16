@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {%if pagetitle%}
+        <title>Document</title>
+    {%else%}
+        <title>Employee details</title>
+    {%endif%}
+</head>
+<body>
+        <h3>Employee Details</h3>
+        <table border="3">
+                <tr><th>Enp no. </th><th>Ename </th><th>Salary </th><th> Hiredate</th></tr>
+                {%for e in emp_list %}
+                        
+                     <tr><td> {{e.Empno}}</td><td>{{e.Ename}}</td><td>{{e.salary}}</td><td>{{e.Hiredate}}</td></tr>
+                {%endfor%}
+        </table>
+    
+</body>
+</html>

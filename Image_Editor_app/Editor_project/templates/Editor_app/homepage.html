@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOME PAGE</title>
+</head>
+<body>
+{% block header%}
+    <h3 border='4' fgcolor='blue' ><i><b> EDITOR PRO</b> </i></h3>
+    <hr>
+{% endblock %}
+
+{% block contents%}
+    <h2> Welcome to EDITOR PRO !<br>Give your images an amazing look & feel width the new features of EDIT PRO...</h2>
+    <hr>
+    <h1>Choose an image to edit:</h1>
+    <form action="/ChoosenImage/" method="GET">
+        <input type="file" name="ImageUpload" >
+        <input type="Submit" value="Upload" name="Submit">
+    </form>
+{% endblock %}
+
+    
+</body>
+</html>

@@ -1,0 +1,12 @@
+{% extends "template_inheritance_app/welcome.html%}
+
+
+{%block content%}
+<table border="=4">
+    <tr> <th> Vegetable</th> <th>Price/kg</th> </tr>
+    {%for v in list_vegies%}
+        <tr><td>{{v.name}}</td> <td>{{v.price/kg}}</td></tr>
+
+    {% endfor %}
+</table>
+{%endblock%}  

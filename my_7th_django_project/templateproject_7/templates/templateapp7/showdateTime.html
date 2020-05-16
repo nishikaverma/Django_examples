@@ -1,0 +1,15 @@
+{% extends "templateapp7/base.html" %} 
+
+
+{% block title%}
+    Date & Time
+{% endblock %}
+
+
+{% block content%}
+    {% if now%}
+        <h2> Current date and time is {{now}}</h2>
+    {%else%}
+        <h2>now variable is not available</h2>
+    {%endif%}
+{% endblock %}

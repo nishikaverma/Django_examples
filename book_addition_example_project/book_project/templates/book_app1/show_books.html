@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your book records</title>
+</head>
+<body>
+        <table border="2">
+                <tr><th> s.no</th><th>book id</th><th>book name</th><th>book price</th><th>subject</th>
+                    <th>Publish date</th></tr>
+                
+                    {% for r in book_records%}
+                    <tr><td>{{forloop.counter}}</td><td>{{r.book_id}}</td><td>{{i.book_name}}</td><td>{{i.book_price}}</td>
+                    <td>{{i.subject}}</td><td>{{i.publish_date}}</td></tr>
+                    {%endfor%}
+        </table>
+    
+</body>
+</html>

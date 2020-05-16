@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Results</title>
+</head>
+<body>
+   <h2> You searched for subject name: {{subjectName}} </h2>
+    {% if books%}
+        Found {{books|length}} book{{books|pluralize}}:
+        <ul>
+            {% for b in books %}
+            <li>
+                {{b.book_name}}
+            </li>
+            {% endfor %}
+    {% else%}
+            <h3>Sorry! no books found</h3>
+    {% endif %}
+    </ul>
+</body>
+</html>

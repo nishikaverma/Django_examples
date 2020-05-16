@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DataBase</title>
+</head>
+<body>
+    
+       {% if error %}
+            <h1>{{error}}</h1>
+        {%  else%}
+             <table border="2">
+            <tr><th> s.no</th><td>book name</td>
+            <td>book price</td>
+            </tr>
+            {% for i in records%}
+            <tr><td>{{forloop.counter}}</td><td>{{i.bookname}}</td><td>{{i.bookprice}}</td></tr>
+            {%endfor%}
+        {%endif%}
+    </table>
+
+</body>
+</html>
